@@ -1,0 +1,130 @@
+
+.block{
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+  width: 455px;
+  height: 232px;
+  padding: 17px 26px 17px 26px;
+  
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.carousel-control { 
+  width: 8%;
+  width: 0px;
+}
+
+.carousel-control.left,
+.carousel-control.right { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: none;
+  opacity: 1;
+}
+
+.carousel-control > a > span {
+  color: white;
+  font-size: 29px !important;
+}
+
+.carousel-col { 
+  position: relative; 
+  min-height: 1px; 
+  padding: 5px; 
+  float: left;
+}
+
+/* CARD --------------*/
+.card-title{
+  color:  #1A1A1A;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+.card-subtitle{
+  color: #1A1A1A;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 17px;
+}
+
+.container-card-infos{
+  display: flex;
+  gap: 17px;
+}
+
+.image-card{
+  width: 58px;
+}
+
+.card-infos-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-infos-content-title{
+  margin-bottom: 0px;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+}
+.card-infos-content-subtitle{
+  margin-bottom: 0px;
+}
+
+.active > div { display:none; }
+.active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev		     { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+  .carousel-inner .next        { left:  33%; }
+  .carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right{ left:  33%; }
+  .carousel-inner .next        { left:  33%; }
+  .carousel-inner .prev		     { left: -33%; }
+  .carousel-col                { width: 33%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+  .active > div:first-child + div + div + div { display:block; }
+}
